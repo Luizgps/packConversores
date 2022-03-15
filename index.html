@@ -6,29 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Conversor de Moeda</title>
     <link rel="stylesheet" href="_css\index.css">
-    <script src="_script\index.js"></script>
 </head>
 <body>
     <div class="container">
         <h1 class="page-title">
-          Conversor de moedas
+            Conversor de moedas
         </h1>
         <p class="page-subtitle">
-          Converta valores de real para a moeda desejada!
+            Converta valores de real para a moeda desejada!
         </p>
-        <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-conversor-de-moedas.svg" class="page-logo" alt=""><br><br>
-        <label for="moeda">Insira o valor</label><br>
-        <label for="select">Escolha a Moeda:</label>
-        <select name="select" id="select" onchange="Select(this.value)">
-          <option value="dolar">Dolar</option>
-          <option value="euro">Euro</option>
-          <option value="libra">Libra</option>
-        </select>
-        <input type="number" id="valor" size="2" /><br>
-       <!--<button type="submit" onclick="Select(input)">Converter</button>-->
+        <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-conversor-de-moedas.svg"
+             class="page-logo" alt=""><br><br>
+        <form>
+            <label for="valor">Insira o valor</label><br>
+            <label for="moeda">Escolha a Moeda:</label>
+            <select name="moeda" id="moeda">
+                <option value="dolar">Dolar</option>
+                <option value="euro">Euro</option>
+                <option value="libra">Libra</option>
+                <option value="rublo">Rublo</option>
+            </select>
+            <input type="number" id="valor" name="number" size="2" min="1" value="1"/>
+            <button id="botao">Converter</button>
+        </form>
         <h2 id="valorConvertido"></h2>
-      </div>
-        <a href="conversorKmAnosLuz\index.html"
-        class="anosLuz">Conversor de KM para Anos Luz</a>  
+    </div>
+    <a href="conversorKmAnosLuz\index.html"
+       class="anosLuz">Conversor de KM para Anos Luz</a>
+    <script src="_script\index.js"></script>
 </body>
 </html>

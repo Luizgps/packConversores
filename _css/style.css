@@ -1,0 +1,155 @@
+* {
+  margin: 0; /*MARGIN cria espaço em volta dos elementos, fora de qualquer borda definida */
+  padding: 0; /*PADDING cria espaço em volta dos elementos, dentro de qualquer borda definida*/
+}
+
+a {
+  color: #fff;/*COLOR define cor para a fonte*/
+  text-decoration: none;/*TEXT-DECORATION expecifica a decoração adicionada no texto, abrevia decoration-line/color/style/thickness*/
+  transition: 0.3s;/*TRANSITION define uma transição para o texto*/
+}
+
+a:hover {
+  opacity: 0.7;/*OPACITY define a opacidade*/
+}
+
+.logo {
+  font-size: 24px;/*FONT-SIZE define o tamanho da fonte*/
+  text-transform: uppercase;/*TEXT-TRANSFORM controla a capitalização do texto*/
+  letter-spacing: 4px;/*LETTER-SPACING define o espaçamento entre eltras*/
+}
+
+nav {
+  display: flex;/*DISPLAY controla o comportamento do display*/
+  justify-content: space-around;/*JUSTIFY-CONTENT Alinha os itens da marcação no eixo X*/
+  align-items: center;/*ALIGN-ITEMS especifica o padrão de alinhamento para os itens dentro da marcação*/
+  font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;/*FONT-FAMILY define a fonte do texto*/
+  background: #23232e;/*BACKGROUND define o fundo*/
+  height: 8vh;/*HEIGHT define a altura do item*/
+}
+
+main {
+  background: url("bg.jpg") no-repeat center center;
+  background-size: cover;/*BACKGROUND-SIZE define o tamanho do fundo*/
+  height: 92vh;
+}
+
+.nav-list {
+  list-style: none;/*LIST-STYLE abrevia list-style-type/position/image*/
+  display: flex;
+}
+
+.nav-list li {
+  letter-spacing: 3px;
+  margin-left: 32px;/*MARGIN-LEFT define o espaço entre o texto e a margem esquerda*/
+}
+
+.mobile-menu {
+  display: none;
+  cursor: pointer;/*CURSOR define interação do cursor com o item*/
+}
+
+.mobile-menu div {
+  width: 32px;/*WIDTH define a largura*/
+  height: 2px;
+  background: #fff;
+  margin: 8px;
+  transition: 0.3s;
+}
+
+@media (max-width: 999px) {/*@MEDIA aplica diferentes estilos para diferentes tipos de dispositivos*/
+  body {
+    overflow-x: hidden;/*OVERFLOW-X define algumas coisas quando algum elemento cria uma barra de rolagem no eixo X*/
+  }
+  .nav-list {
+    position: absolute;/*POSITION define a posição do item*/
+    top: 8vh;/*TOP afeta a posição vertical de um elemento*/
+    right: 0;/*RIGHT afeta a posição horizontal de um elemento*/
+    width: 50vw;
+    height: 92vh;
+    background: #23232e;
+    flex-direction: column;/*FLEX-DIRECTION especifica a direção de um item flexivel*/
+    align-items: center;
+    justify-content: space-around;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in;
+  }
+  .nav-list li {
+    margin-left: 0;
+    opacity: 0;
+  }
+  .mobile-menu {
+    display: block;
+  }
+}
+
+.nav-list.active {
+  transform: translateX(0);
+}
+
+@keyframes navLinkFade {/*@KEYFRAMES define regras de uma animação*/
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.mobile-menu.active .line1 {
+  transform: rotate(-45deg) translate(-8px, 8px);
+}
+
+.mobile-menu.active .line2 {
+  opacity: 0;
+}
+
+.mobile-menu.active .line3 {
+  transform: rotate(45deg) translate(-5px, -7px);
+}
+/*.container {
+  text-align: center;
+  padding: 0;
+  height: 100vh;
+}*/
+.page-title {
+  color: #ffffff;
+  /*margin: 0 0 5px;*/
+}
+.page-subtitle {
+  color: #ffffff;
+  /*margin-top: 5px;*/
+}
+.page-logo {
+  width: 200px;
+}
+input {
+  margin: 12px;
+  padding: 6px;
+  border-radius: 5px;
+}
+label {
+  color: white;
+}
+button {
+  margin-top: 12px;
+  padding: 4px 8px;
+  border-radius: 10px;
+  position: absolute;
+}
+h2 {
+  color: #ffffff;
+  font-size: 30px;
+}
+.anosLuz {
+  color: #ffffff;
+  font-size: 30px;
+  text-align: center;     
+}
+select{
+  margin-top: 12px;
+  padding: 4px 8px;
+  border-radius: 10px;
+}

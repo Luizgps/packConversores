@@ -24,12 +24,11 @@ nav {
   justify-content: space-around;/*JUSTIFY-CONTENT Alinha os itens da marcação no eixo X*/
   align-items: center;/*ALIGN-ITEMS especifica o padrão de alinhamento para os itens dentro da marcação*/
   font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;/*FONT-FAMILY define a fonte do texto*/
-  background: #23232e;/*BACKGROUND define o fundo*/
+  background: #336A9B;/*BACKGROUND define o fundo*/
   height: 8vh;/*HEIGHT define a altura do item*/
 }
 
 main {
-  background: url("bg.jpg") no-repeat center center;
   background-size: cover;/*BACKGROUND-SIZE define o tamanho do fundo*/
   height: 92vh;
 }
@@ -67,7 +66,7 @@ main {
     right: 0;/*RIGHT afeta a posição horizontal de um elemento*/
     width: 50vw;
     height: 92vh;
-    background: #23232e;
+    background: #336A9B;
     flex-direction: column;/*FLEX-DIRECTION especifica a direção de um item flexivel*/
     align-items: center;
     justify-content: space-around;
@@ -109,47 +108,38 @@ main {
 .mobile-menu.active .line3 {
   transform: rotate(45deg) translate(-5px, -7px);
 }
-/*.container {
-  text-align: center;
-  padding: 0;
-  height: 100vh;
-}*/
-.page-title {
-  color: #ffffff;
-  /*margin: 0 0 5px;*/
-}
-.page-subtitle {
-  color: #ffffff;
-  /*margin-top: 5px;*/
-}
-.page-logo {
-  width: 200px;
-}
 input {
-  margin: 12px;
-  padding: 6px;
+  margin: 0;
+  padding: 0;
   border-radius: 5px;
+ 
 }
 label {
-  color: white;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  font-size: 36px;
 }
 button {
-  margin-top: 12px;
-  padding: 4px 8px;
-  border-radius: 10px;
-  position: absolute;
+
+  padding: 0;
+  margin: 0;
+  border-radius: 15px;
+ 
 }
 h2 {
-  color: #ffffff;
+  color: #fff;
   font-size: 30px;
-}
-.anosLuz {
-  color: #ffffff;
-  font-size: 30px;
-  text-align: center;     
 }
 select{
-  margin-top: 12px;
-  padding: 4px 8px;
+  margin-top: 0;
+  padding: 0;
   border-radius: 10px;
+  
+}
+form{
+  font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+}
+body{
+  background: url("bg.jpg") no-repeat center center;
 }

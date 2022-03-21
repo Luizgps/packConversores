@@ -1,14 +1,14 @@
-class MobileNavbar {
+class MobileNavbar { //referenciando propriedades da classe
     constructor(mobileMenu, navList, navLinks) {
-      this.mobileMenu = document.querySelector(mobileMenu);
-      this.navList = document.querySelector(navList);
-      this.navLinks = document.querySelectorAll(navLinks);
-      this.activeClass = "active";
+      this.mobileMenu = document.querySelector(mobileMenu);//seleciona mobileMenu
+      this.navList = document.querySelector(navList);//seleciona navList
+      this.navLinks = document.querySelectorAll(navLinks);//seleciona navLinks
+      this.activeClass = "active";//
   
-      this.handleClick = this.handleClick.bind(this);
+      this.handleClick = this.handleClick.bind(this);//referenciando handleClick a classe
     }
   
-    animateLinks() {
+    animateLinks() {//animação
       this.navLinks.forEach((link, index) => {
         link.style.animation
           ? (link.style.animation = "")
@@ -24,7 +24,7 @@ class MobileNavbar {
       this.animateLinks();
     }
   
-    addClickEvent() {
+    addClickEvent() {//evento de click no botão do menu
       this.mobileMenu.addEventListener("click", this.handleClick);
     }
   
@@ -62,7 +62,7 @@ function executarConversao(e) { //func recebe parametro "e";
     let valorConvertido = converter(moeda, valor);//cria variavel e seta o valor da mesma como o resultado da func converter, passando como parametros let moeda e let valor.
     let elementoValorConvertido = document.getElementById("valorConvertido");//cria variavel e coleta os dados do h2 com id valorConvertido;
 
-    elementoValorConvertido.innerHTML = valor.toFixed(2) /*fixa 2 casas decimais*/ + " em " + moeda + " equivale há é R$" + valorConvertido.toFixed(2);// seta uma mensagem na tela quando finaliza o processo por completo;
+    elementoValorConvertido.innerHTML = valor.toFixed(2) /*fixa 2 casas decimais*/ + " em " + moeda + " equivale a é R$" + valorConvertido.toFixed(2);// seta uma mensagem na tela quando finaliza o processo por completo;
 }
 
 function converter(moeda, valor) {//função converter recebendo let moeda e let valor da função executarConversao;

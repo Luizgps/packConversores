@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,45 +8,39 @@
     <title>Conversores</title>
     <link rel="stylesheet" href="_css\style.css">
 </head>
+
 <body>
-    <form>
-    <header>
-        <nav>
-            <a class="logo" href="/">Conversor de Moedas</a>
-            <div class="mobile-menu">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
-            </div>
-            <ul class="nav-list">
-                <li><a href="#">Conversor Anos Luz</a></li>
-                <li><a href="#">Projetos</a></li>
-                <li><a href="#">Contato</a></li>
-            </ul>
-        </nav>
-    </header>
-        <h1 class="page-title">
-            Conversor de Moedas
-        </h1>
-        <p class="page-subtitle">
-            Converta valores de Real para a moeda desejada!
-        </p>
-        <br><br>
-            <label for="valor">Insira o valor</label><br>
-            <label for="moeda">Escolha a Moeda:</label>
-            <select name="moeda" id="moeda">
-                <option value="dolar">Dolar</option>
-                <option value="euro">Euro</option>
-                <option value="libra">Libra</option>
-                <option value="rublo">Rublo</option>
-            </select>
-            <input type="number" id="valor" name="number" size="2" min="1" value="1"/>
-            <button id="botao">Converter</button>
-        </form>
-        <h2 id="valorConvertido"></h2>
-    </div>
-    <main></main>
+        <header>
+            <nav>
+                <a class="logo" href="/">Conversor de Moedas</a>
+                <div class="mobile-menu">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+                <ul class="nav-list">
+                    <li><a href="#">Conversor Anos Luz</a></li>
+                    <li><a href="#">Projetos</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </nav>
+        </header>
+        <form>
+        <label for="valor" id="valorInserir">Insira o valor</label><br>
+        <label for="moeda" id="escolha">Escolha a Moeda:</label>
+        <select name="moeda" id="moeda">
+            <option value="dolar">Dolar</option>
+            <option value="euro">Euro</option>
+            <option value="libra">Libra</option>
+            <option value="rublo">Rublo</option>
+        </select>
+        <input type="number" id="valor" name="number" min="1" value="1" />
+        <button id="botao">Converter</button>
+    </form>
+    <h2 id="valorConvertido"></h2>
+    
+
     <script src="_script\mobile-navbar.js"></script>
-    <script src="_script\index.js"></script>
 </body>
+
 </html>
